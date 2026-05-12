@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Watermark Cleaner</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Local image utility</p>
+          <h1>Watermark Cleaner</h1>
+          <p class="subcopy">Drop Gemini images here, process them locally, and keep the watcher running in the background when you need automation.</p>
+        </div>
+        <div class="status" id="status">
+          <span class="pulse"></span>
+          <span>Connecting</span>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <form class="dropzone" id="uploadForm">
+          <input id="images" name="images" type="file" accept="image/*" multiple>
+          <div class="dropzone-copy">
+            <span class="mark">+</span>
+            <h2>Drop images</h2>
+            <p id="selectionState">or click to choose files</p>
+          </div>
+        </form>
+
+        <aside class="panel">
+          <div class="field">
+            <label for="format">Format</label>
+            <select id="format" name="format">
+              <option value="same">Same as source</option>
+              <option value="png">PNG</option>
+              <option value="jpg">JPG</option>
+              <option value="webp">WEBP</option>
+              <option value="avif">AVIF</option>
+              <option value="tiff">TIFF</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="quality">Quality</label>
+            <input id="quality" name="quality" type="number" min="1" max="100" value="95">
+          </div>
+          <button class="primary" id="processButton" type="submit" form="uploadForm">Process images</button>
+          <p class="hint" id="folderHint">Outputs are saved locally by the Node process.</p>
+        </aside>
+      </section>
+
+      <section class="results">
+        <div class="section-title">
+          <h2>Recent output</h2>
+          <button id="refreshButton" type="button">Refresh</button>
+        </div>
+        <div class="list" id="resultsList">
+          <p class="empty">No processed images yet.</p>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

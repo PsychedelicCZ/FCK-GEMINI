@@ -1,0 +1,9 @@
+node_modules/
+gitmeta/
+.yarn/cache/
+.yarn/install-state.gz
+.npm-cache/
+outputs/
+config/
+npm-debug.log*
+yarn-error.log*

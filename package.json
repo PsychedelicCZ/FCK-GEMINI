@@ -1,0 +1,19 @@
+{
+  "name": "gemini-watermark-cleaner",
+  "version": "1.0.0",
+  "description": "Localhost web UI and folder watcher for removing the Gemini watermark from generated images.",
+  "main": "script.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node script.js --web",
+    "web": "node script.js --web",
+    "watch": "node script.js --watch",
+    "dev": "node script.js --web --watch"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "express": "^4.19.2",
+    "multer": "^2.0.2",
+    "sharp": "^0.33.5"
+  }
+}
