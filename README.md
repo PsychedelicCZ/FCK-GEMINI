@@ -1,6 +1,6 @@
 # Gemini Watermark Cleaner
 
-Lokální Node.js nástroj pro odstranění Gemini watermarku z obrázků. Umí běžet jako jednoduchý dark-theme web na `localhostu`, jako automatický watcher složky, nebo jako oboje najednou. Vše se zpracovává lokálně na počítači.
+Lokální Node.js nástroj pro odstranění Gemini watermarku z obrázků. Umí běžet jako jednoduchý web na `localhostu`, jako automatický watcher složky (kdykoliv uložíte obrázek do zadané složky automaticky ti do pár vteřin vytvoří druhý obrázek bez watermarku), nebo jako oboje najednou. Vše se zpracovává lokálně na počítači bez Ai modelů, do 3s, bez ztráty kvality, spolehlivě na jakémkoliv pozadí.
 
 ## Požadavky
 
