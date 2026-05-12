@@ -11,7 +11,7 @@ Lokální Node.js nástroj pro odstranění Gemini watermarku z obrázků. Umí 
 ## Instalace
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/PsychedelicCZ/FCK-GEMINI
 cd watermark
 npm install
 ```
