@@ -28,7 +28,7 @@ yarn install
 npm run web
 ```
 
-Potom otevři [http://127.0.0.1:8010](http://127.0.0.1:8010). Obrázky můžeš nahrát ručně přes web. Pokud nezadáš `--output`, výstupy z web uploadu se ukládají do složky `outputs/` v projektu a web nabídne download link.
+Potom otevři [http://localhost:8010](http://localhost:8010). Obrázky můžeš nahrát ručně přes web. Pokud nezadáš `--output`, výstupy z web uploadu se ukládají do složky `outputs/` v projektu a web nabídne download link.
 
 S vlastním portem a výstupní složkou:
 
